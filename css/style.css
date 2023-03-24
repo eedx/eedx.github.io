@@ -7,31 +7,26 @@ body {
 	font-size: 18px;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-}
-
 h1 {
 	font-size: 1.75em;
 	text-align: center;
+	color: black;
 }
+
 section div {
 	font-size: 1.25em;
+	float: right;
+	/*position: relative;
+	right: 0;
+	top: 0;*/
+	padding: 5px 10px;
+	width: 120px;
+	text-align: center;
 }
 
 section, div {
 	border: 1px solid black;
-}
-
-.chicken, .beef, .sushi {
-	float: right;
-	position: relative;
-	right: 0;
-	top: 0;
-	padding: 5px;
-	width: 20%;
-	text-align: center;
+	clear: left;
 }
 
 .chicken {
@@ -48,11 +43,28 @@ section, div {
 }
 
 section {
-	width: 80%;
 	clear: right;
 	position: relative;
 	float: left;
 	margin: 10px 10px;
 	background-color: #aaaaaa;
 }
-/*desktop version of the site when the width of the browser window is 992px and above. Tablet view should appear only if the width of the browser window is between 768px and 991px, inclusively. Mobile view should appear only if the width of the browser is equal to or less than 767px*/
+
+@media (min-width: 992px) {
+	col-lg-4 {
+		width: 33.33%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	col-md-6 {
+		width: 50%;
+	}
+}
+
+@media (max-width: 767px) {
+	col-sm-12 {
+		width: 100%;
+	}
+}
+
