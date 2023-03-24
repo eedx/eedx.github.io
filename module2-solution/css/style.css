@@ -14,6 +14,8 @@ h1 {
 }
 
 section div {
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
 	font-size: 1.25em;
 	float: right;
 	/*position: relative;
@@ -24,7 +26,7 @@ section div {
 	text-align: center;
 }
 
-section, div {
+section {
 	border: 1px solid black;
 	clear: left;
 }
