@@ -1,4 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+}
+
 html {
   height: 100%;
   width: 100%;
 }
+
+h1 {
+	font-size: 1.75em;
+	text-align: center;
+}
+section div {
+	font-size: 1.25em;
+}
+
+section, div {
+	border: 1px solid black;
+}
+
+.chicken, .beef, .sushi {
+	float: right;
+	position: relative;
+	right: 0;
+	top: 0;
+	padding: 5px;
+	width: 20%;
+	text-align: center;
+}
+
+.chicken {
+	background-color: #eb673a;
+}
+
+.beef {
+	background-color: #fc4e4e;
+	color: white;
+}
+
+.sushi {
+	background-color: #dee30f;
+}
+
+section {
+	width: 80%;
+	clear: right;
+	position: relative;
+	float: left;
+	margin: 10px 10px;
+	background-color: #aaaaaa;
+}
+/*desktop version of the site when the width of the browser window is 992px and above. Tablet view should appear only if the width of the browser window is between 768px and 991px, inclusively. Mobile view should appear only if the width of the browser is equal to or less than 767px*/
