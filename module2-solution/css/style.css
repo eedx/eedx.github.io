@@ -29,6 +29,7 @@ section div {
 section {
 	border: 1px solid black;
 	clear: left;
+	display: inline-block;
 }
 
 .chicken {
